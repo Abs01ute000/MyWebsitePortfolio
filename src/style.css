@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: black;
+    color: #333;}
+.header {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 100px 20px 150px;
+    overflow: hidden;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('https://kartinki.pics/uploads/posts/2021-07/1625703049_8-kartinkin-com-p-oboi-programmista-krasivie-10.jpg')
+    center/cover no-repeat;
+    opacity: 0.3; /* ← регулируй прозрачность (0.0 - 1.0) */
+    z-index: -1; /* фон позади текста */
+    filter: blur(2px);
+}
+
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: white;
+}
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+.hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.subtitle {
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: white;
+}
+.social-links {
+    margin: 20px 0;
+}
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+.social-links a:hover {
+    color: white;
+}
+
+.profile-img {
+    margin-top: 30px;
+}
+.profile-img img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about {
+    background: #101211;
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0px auto 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+}
+.about h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 5px;
+}
+.about h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: white;
+}
+.intro {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.skills {
+    background: #101211;
+    text-align: left;
+    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    margin: 50px auto 0 100px;
+    padding: 1px 20px 30px;
+}
+.skills ul {
+    text-align: left;
+    margin: 10px;
+    padding: 10px 10px 30px;
+    color: white;
+}
+.skills h5 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: white;
+}
+.skills li {
+    padding: 5px;
+}
+
+.projects {
+    background: #101211;
+    text-align: left;
+    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    margin: 50px 100px 10px auto;
+    padding: 1px 20px 30px;
+}
+.projects h5 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: white;
+}
+.projects ol {
+    text-align: left;
+    margin: 10px;
+    padding: 10px 10px 30px;
+    color: white;
+}
+.projects li {
+    padding: 5px;
+}
+.background {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)),
+    url('photos/Фон космос.png') center/cover;
+
+}
